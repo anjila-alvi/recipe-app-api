@@ -3,7 +3,8 @@ Sample tests
 """
 from django.test import SimpleTestCase
 
-from app import calc 
+from app import calc
+
 
 class calcTests(SimpleTestCase):
     """Test the calc module"""
@@ -13,7 +14,6 @@ class calcTests(SimpleTestCase):
         res = calc.add(5, 6)
 
         self.assertEqual(res, 11)
-
 
     def test_subract_numbers(self):
         """Test to subract numbers"""
